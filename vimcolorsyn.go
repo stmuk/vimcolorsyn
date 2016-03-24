@@ -9,10 +9,20 @@ import (
 	"os/exec"
 )
 
+// Vimcolour type implements a simple library for colour syntax highlighting based on vim.
 type Vimcolour struct {
 	Fin, Fout, Lang string
 }
 
+/*
+New creates a colour syntax highlighted file
+
+Example:
+
+v := &Vimcolour{"vimcolorsyn.go","/tmp/foo.html","go"}
+v.New()
+
+*/
 func (v *Vimcolour) New() {
 
 	_, err := os.Open(v.Fin)
