@@ -1,6 +1,6 @@
 package vimcolorsyn
 
-// use vim to generate colour syntax files
+// steve.mynott@gmail.com
 
 import (
 	"fmt"
